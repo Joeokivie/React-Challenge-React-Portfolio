@@ -1,26 +1,32 @@
 import React from "react";
 
-function Navigation(props) {
-	const { currentTab, setCurrentTab } = props;
+function Navigation({ currentPage, handlePageChange }) {
+  const tabs = ["About", "Portfolio", "Contact", "Resume"];
 
-	return (
-		<nav>
-			<ul className="flex-row mobile-view">
-				<li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("about")}>About Me</span>
-				</li>
-				<li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
-				</li>
-				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("contact")}>Contact</span>
-				</li>
-				<li className={currentTab === "resume" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("resume")}>Resume</span>
-				</li>
-			</ul>
-		</nav>
-	);
+  const handleClick = (tab) => {
+    handlePageChange(tab);
+  };
+
+  return (
+    <div className="nav is-centered">
+      <ul className="nav-list">
+        {tabs.map((tab) => (
+          <li
+            className={`nav-item ${currentPage === tab ? "is-active" : ""}`}
+            key={tab}
+          >
+            <a
+              href={`#${tab.toLowerCase()}`}
+              onClick={handleClick.bind(null, tab)}
+              className={`nav-link ${currentPage === tab ? "is-active" : ""}`}
+            >
+              {tab}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Navigation;

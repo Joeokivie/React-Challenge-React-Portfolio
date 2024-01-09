@@ -1,58 +1,24 @@
-import React, { useState } from 'react';
-import Navigation from "./Nav.jsx";
-import About from "./About.jsx";
-import Contact from "./Contact.jsx";
-import Portfolio from "./Portfolio.jsx";
-import Resume from "./Resume.jsx";
-
-function Header() {
-  const [currentPage, handlePageChange] = useState("About");
-
-  
-  const renderPage = () => {
-    switch (currentPage) {
-      case "About":
-        return <About />;
-      case "Portfolio":
-        return <Portfolio />;
-      case "Contact":
-        return <Contact />;
-      case "Resume":
-        return <Resume />;
-      default:
-        return <About />;
-    }
-  };
+function Project({ project }) {
+  const { name, repo, link, description, image } = project;
 
   return (
-    <div>
-      <nav className="navbar">
-        <div className="navbar-brand">
-          <a
-            className="navbar-item"
-            rel="noreferrer"
-            target="_blank"
-            href="https://github.com/Joeokivie"
-          >
-            <span className="content is-large">Joseph Okivie</span>
-          </a>
-        </div>
-      </nav>
-      {}
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
+    <div className="p-3">
+      <img
+        src={projects[image]}
+        alt={name}
+        className="p-img"
       />
-      <header>
-        {}
-        <h1>{JosephOkivie}</h1>
-      </header>
-      {}
-      <main>
-        <div>{renderPage()}</div>
-      </main>
+      <div className="">
+        <h1>
+          <a href={link}>{name}</a>{' '}
+          <a href={repo}>
+            <i className="fab fa-github"></i>
+          </a>
+        </h1>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
 
-export default Header;
+export default Project;

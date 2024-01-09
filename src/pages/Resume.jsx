@@ -56,4 +56,6 @@ function Resume() {
       </section>
     );
   }
+
+  export default Resume;
   
