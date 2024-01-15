@@ -14,7 +14,7 @@ function Footer() {
           >
             <i class="fa-brands fa-github"></i>
           </a>
-          <hr />
+         
           <a
             href="https://www.linkedin.com/in/joseph-okivie-958799243/"
             target="_blank"
