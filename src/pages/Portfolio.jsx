@@ -15,14 +15,14 @@ function Portfolio() {
         description: 'Front End',
         link: 'https://smindre1.github.io/Project-One-Front-End-Dev/',
         repo: 'https://github.com/smindre1/Project-One-Front-End-Dev',
-        image: 'Music App',
+        image: 'musicapp',
       },
       {
         name: 'Text-editor',
         description: 'JS',
         link: 'https://enigmatic-anchorage-52034-687f3412666f.herokuapp.com/',
         repo: 'https://github.com/Joeokivie/Text-editor',
-        image: 'Tesx-Editor',
+        image: 'texteditor',
       },
     ];
   
