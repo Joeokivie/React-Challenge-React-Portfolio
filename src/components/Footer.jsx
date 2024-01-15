@@ -12,7 +12,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
          
           <a
@@ -21,7 +21,7 @@ function Footer() {
             rel="noreferrer"
             className="linkedin"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </p>
       </div>
