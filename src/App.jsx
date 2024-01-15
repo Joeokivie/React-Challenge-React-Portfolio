@@ -8,6 +8,7 @@ import Contacts from "./pages/Contactinfo";
 import Footer from "./components/Footer";
 
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
 

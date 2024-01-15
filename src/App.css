@@ -1,43 +1,76 @@
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f2f2f2; /* Change the background color */
+}
+
+header, footer {
+  background-color: #007bff; /* Change the background color */
+  color: #fff;
   text-align: center;
+  padding: 15px 0; /* Increase padding for better visibility */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu, #contactme-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.headerText, #contactme-nav a {
+  margin: 0 20px; /* Increase margin for better spacing */
+  text-decoration: none;
+  color: #fff;
 }
 
-.card {
-  padding: 2em;
+.AboutMeClass, .ContactMeClass, .ResumeClass {
+  text-align: center;
+  padding: 60px 20px; /* Adjust padding for better spacing */
 }
 
-.read-the-docs {
-  color: #888;
+#aboutMeArticle {
+  max-width: 900px; /* Increase the max-width for better readability */
+  margin: 0 auto;
+}
+
+.text {
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between; /* Change to space-between for better alignment */
+  flex-wrap: wrap;
+  padding: 30px; /* Adjust padding for better spacing */
+}
+
+.ProjectClass {
+  max-width: 350px; /* Increase max-width for better presentation */
+  margin: 30px;
+  text-align: center;
+  background-color: #fff; /* Change the background color */
+  padding: 20px;
+  border-radius: 10px; /* Add border-radius for a rounded look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle effect */
+}
+
+#contactme-nav {
+  margin-top: 30px; /* Adjust the margin-top */
+}
+
+#contactme-nav a {
+  display: inline-block; /* Change to inline-block for better alignment */
+  margin-right: 10px; /* Adjust margin for better spacing */
+  color: #555; /* Change the text color */
+  text-decoration: none;
 }
