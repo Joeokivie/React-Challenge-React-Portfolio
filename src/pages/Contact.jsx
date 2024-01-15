@@ -5,13 +5,13 @@ function Contacts() {
         Contact Me
       </h2>
       <nav id="contactme-nav">
-        <a href="tel:888-777-6666">
-          888•777•6666
+        <a href="tel:678-472-2265">
+          678-472-2265
         </a>
-        <a href="vishal@gmail.com">
-          vishal@gmail.com
+        <a href="josephokivie@hotmail.com">
+          josephokivie@hotmail.com
         </a>
-        <a href="https://github.com/VishalManglani7" >
+        <a href="https://github.com/Joeokivie" >
           GitHub
         </a>
       </nav>

@@ -5,19 +5,24 @@ function Footer() {
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
-          <strong>My Portfolio for full-stack software development</strong> - a React site by{"Joseph Okivie "}
-          <a href="https://github.com/Joeokivie?tab=repositories" target="_blank" rel="noreferrer">
-            Joseph Okivie
+          <strong>My Portfolio for full-stack web development</strong> - a React
+          site by{"Joseph Okivie "}
+          <a
+            href="https://github.com/Joeokivie?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
           </a>
-          .
           <hr />
           <a
             href="https://www.linkedin.com/in/joseph-okivie-958799243/"
             target="_blank"
             rel="noreferrer"
+            className="linkedin"
           >
-            LinkedIn
-          </a>{" "} |
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </p>
       </div>
     </footer>

@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
 import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+import Contacts from "./pages/Contact";
+import Footer from "./components/Footer";
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -16,6 +21,7 @@ function App() {
       <main className="mx-3">
         <Outlet />
       </main>
+      <Footer/>
     </>
   );
 }

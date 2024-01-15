@@ -16,7 +16,7 @@ function Navigation({ currentPage, handlePageChange }) {
             key={tab}
           >
             <a
-              href={`#${tab.toLowerCase()}`}
+              href={`${tab.toLowerCase()}`}
               onClick={handleClick.bind(null, tab)}
               className={`nav-link ${currentPage === tab ? "is-active" : ""}`}
             >

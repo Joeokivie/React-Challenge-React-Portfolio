@@ -1,0 +1,1 @@
+export{default as notetaker} from "./projects/notetaker.png"

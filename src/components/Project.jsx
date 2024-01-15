@@ -1,4 +1,4 @@
-
+import * as projects from "../assets"
 import React from "react";
 function Project({ project }) {
   const { name, repo, link, description, image } = project;
