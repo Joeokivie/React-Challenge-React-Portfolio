@@ -1,4 +1,4 @@
-function Contacts() {
+function Contracts() {
   return (
     <div className="ContactMeClass" id="ContactMe" >
       <h2 className="title">
@@ -19,4 +19,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default Contracts;
