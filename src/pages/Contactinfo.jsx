@@ -1,4 +1,7 @@
-function Contracts() {
+import Contact from "../components/Contactform";
+
+
+function Contacts() {
   return (
     <div className="ContactMeClass" id="ContactMe" >
       <h2 className="title">
@@ -19,4 +22,4 @@ function Contracts() {
   );
 }
 
-export default Contracts;
+export default Contacts;
