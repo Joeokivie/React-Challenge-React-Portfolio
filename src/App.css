@@ -9,6 +9,18 @@ body {
   min-height: 100vh;
   background-color: #f2f2f2; /* Change the background color */
 }
+ /* This format is for the cat image used on resume page */
+.avatarimage {
+  max-width: 75%; 
+  height: auto; 
+  border-radius: 10px;}
+
+  .proficiency-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 
 header, footer {
   background-color: #007bff; /* Change the background color */
