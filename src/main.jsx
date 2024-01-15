@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
 import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import Contact from "./components/Contact";
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import "./index.css"
